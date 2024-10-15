@@ -4,14 +4,16 @@ public class User
 {
     // Propiedades de la clase
     public string Nombre { get; set; }
-    public string CorreoElectronico { get; set; }
-    public List<string> Roles { get; private set; }
-
+    public string Apellido { get; set; }
+    public string Cedula { get; set; }
+ 
+ 
+    
     // Constructor
-    public User(string nombre, string correoElectronico)
+    public User(string nombre, string cedula, string apellido)
     {
         Nombre = nombre;
-        CorreoElectronico = correoElectronico;
-        Roles = new List<string>();
+        Apellido = apellido;
+        Cedula = cedula; 
     }
 }
